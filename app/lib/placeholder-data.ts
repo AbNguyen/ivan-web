@@ -48,6 +48,8 @@ const customers = [
   },
 ];
 
+
+
 const invoices = [
   {
     customer_id: customers[0].id,
@@ -144,4 +146,100 @@ const revenue = [
   { month: 'Dec', revenue: 4800 },
 ];
 
-export { users, customers, invoices, revenue };
+const latestInvoices = [
+  {
+    amount: '$448.00',
+    name: 'Michael Novotny',
+    image_url: '/customers/michael-novotny.png',
+    email: 'michael@novotny.com',
+    id: 'e3174954-66fc-4182-a1a4-031907f6bafa'
+  },
+  {
+    amount: '$5.00',
+    name: 'Delba de Oliveira',
+    image_url: '/customers/delba-de-oliveira.png',
+    email: 'delba@oliveira.com',
+    id: '22007f10-fc76-4ac2-b6d1-accb9847bb7f'
+  },
+  {
+    amount: '$345.77',
+    name: 'Balazs Orban',
+    image_url: '/customers/balazs-orban.png',
+    email: 'balazs@orban.com',
+    id: '92e8cbba-f36c-42e5-9313-f4cbf885001e'
+  },
+  {
+    amount: '$542.46',
+    name: 'Lee Robinson',
+    image_url: '/customers/lee-robinson.png',
+    email: 'lee@robinson.com',
+    id: 'acf4e299-fc60-4593-aa79-220324b9cb3d'
+  },
+  {
+    amount: '$6.66',
+    name: 'Evil Rabbit',
+    image_url: '/customers/evil-rabbit.png',
+    email: 'evil@rabbit.com',
+    id: 'f511442a-d2b9-4087-8042-d05de1a8c52a'
+  }
+];
+
+const invoicesTable = [
+  {
+    id: 'e3174954-66fc-4182-a1a4-031907f6bafa',
+    amount: 44800,
+    date: '2023-09-09T17:00:00.000Z',
+    status: 'paid',
+    name: 'Michael Novotny',
+    email: 'michael@novotny.com',
+    image_url: '/customers/michael-novotny.png'
+  },
+  {
+    id: '22007f10-fc76-4ac2-b6d1-accb9847bb7f',
+    amount: 500,
+    date: '2023-08-18T17:00:00.000Z',
+    status: 'paid',
+    name: 'Delba de Oliveira',
+    email: 'delba@oliveira.com',
+    image_url: '/customers/delba-de-oliveira.png'
+  },
+  {
+    id: '92e8cbba-f36c-42e5-9313-f4cbf885001e',
+    amount: 34577,
+    date: '2023-08-04T17:00:00.000Z',
+    status: 'pending',
+    name: 'Balazs Orban',
+    email: 'balazs@orban.com',
+    image_url: '/customers/balazs-orban.png'
+  },
+  {
+    id: 'acf4e299-fc60-4593-aa79-220324b9cb3d',
+    amount: 54246,
+    date: '2023-07-15T17:00:00.000Z',
+    status: 'pending',
+    name: 'Lee Robinson',
+    email: 'lee@robinson.com',
+    image_url: '/customers/lee-robinson.png'
+  },
+  {
+    id: 'f511442a-d2b9-4087-8042-d05de1a8c52a',
+    amount: 666,
+    date: '2023-06-26T17:00:00.000Z',
+    status: 'pending',
+    name: 'Evil Rabbit',
+    email: 'evil@rabbit.com',
+    image_url: '/customers/evil-rabbit.png'
+  },
+  {
+    id: '6042c78a-786a-49af-98b8-21351304c4cc',
+    amount: 1250,
+    date: '2023-06-16T17:00:00.000Z',
+    status: 'paid',
+    name: 'Amy Burns',
+    email: 'amy@burns.com',
+    image_url: '/customers/amy-burns.png'
+  }
+]
+
+export { users, customers, invoices, 
+  revenue, latestInvoices, invoicesTable };
