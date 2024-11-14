@@ -25,11 +25,7 @@ export async function fetchRevenue() {
 
     // return data.rows;
 
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(revenue);
-      }, 3000);
-    });
+    return revenue;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch revenue data.');
