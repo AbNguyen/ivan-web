@@ -3,7 +3,7 @@ import CustomersTable from '@/app/ui/customers/table';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Customers',
+  title: 'Customers New',
 };
 
 export default async function Page(props: {
